@@ -1,0 +1,22 @@
+// Here you can add other styles
+
+.Neki-Table__Title {
+  display: flex;
+  h2 {
+    flex: 1;
+  }
+}
+
+table {
+  .Neki-Table__Handle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    img {
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}
