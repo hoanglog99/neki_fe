@@ -1,0 +1,22 @@
+.textList {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.textList svg {
+    font-size: 36px;
+}
+
+.textList h3 {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+.textList h3 img {
+    margin-right: 15px;
+}
