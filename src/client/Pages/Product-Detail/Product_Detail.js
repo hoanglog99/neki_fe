@@ -1,28 +1,24 @@
 import React from 'react'
-import img1 from './product.jpg'
 import img2 from './product_image_1.jpg'
-import img3 from './product_image_2.jpg'
-import img4 from './product_image_4.jpg'
+import './style.css'
+import Header from 'src/client/components/Header/Header'
+import Footer from 'src/client/components/footer/Footer'
 
 const ProductDetail = () => {
     return (
+        <>
         <div className="product_image_area">
+       
             <div className="container">
                 <div className="row s_product_inner">
                     <div className="col-lg-6">
                         <div className="s_Product_carousel">
                             <div className="single-prd-item">
-                                <img className="img-fluid" src="img/category/s-p1.jpg" alt="" />
-                            </div>
-                            <div className="single-prd-item">
-                                <img className="img-fluid" src="img/category/s-p1.jpg" alt="" />
-                            </div>
-                            <div className="single-prd-item">
-                                <img className="img-fluid" src="img/category/s-p1.jpg" alt="" />
+                                <img className="img-fluid" src={img2} alt="" />
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-5 offset-lg-1">
+                    <div className="col-lg offset-lg-1">
                         <div className="s_product_text">
                             <h3>Faded SkyBlu Denim Jeans</h3>
                             <h2>$149.99</h2>
@@ -51,6 +47,9 @@ const ProductDetail = () => {
                 </div>
             </div>
         </div>
+  
+
+        </>
     )
 }
 

@@ -5,7 +5,10 @@ import './scss/style.scss'
 import Home from './client/Pages/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ListProduct from './client/Pages/Products/ListProduct';
-import ProductDetail from './client/Pages/Product-Detail/Product-Detail';
+import ProductDetail from './client/Pages/Product-Detail/Product_Detail';
+import Cart from './client/Pages/Cart/Cart';
+import Checkout from './client/Pages/Checkout/Checkout';
+import Contact from './client/Pages/Contact/Contact';
 
 
 const loading = (
@@ -37,6 +40,9 @@ class App extends Component {
             <Route exact path="/" name="Home" element={<Home />} />
             <Route exact path="/products" name="Products" element={<ListProduct />} />
             <Route exact path="/product/:id" name="Product_detail" element={<ProductDetail />} />
+            <Route exact path="/cart" name="Product_detail" element={<Cart />} />
+            <Route exact path="/checkout" name="Product_detail" element={<Checkout />} />
+            <Route exact path="/contact" name="Product_detail" element={<Contact />} />
 
           </Routes>
         </Suspense>

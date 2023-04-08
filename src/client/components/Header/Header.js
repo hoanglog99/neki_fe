@@ -1,20 +1,25 @@
 /* eslint-disable */
 import React from 'react'
-// import './Header.css'
+import { Link } from 'react-router-dom'
+import Home from 'src/client/Pages/Home'
+import ListProduct from 'src/client/Pages/Products/ListProduct'
+import './Header.css'
 
 const Header = () => {
   return (
     <div>
     <header className="header">
 		<div className="header_inner d-flex flex-row align-items-center justify-content-start">
-			<div className="logo"><a href="#">Wish</a></div>
+			<div className="logo pl-4"><img src='https://1000logos.net/wp-content/uploads/2021/11/Nike-Logo.png' width={120}/></div>
 			<nav className="main_nav">
 				<ul>
-					<li><a href="#">home</a></li>
-					<li><a href="categories.html">clothes</a></li>
+					<li><Link to='/'>Home</Link></li>
+					<li><Link  to='/products'>Products</Link></li>
+					<li><Link to='./contact'/>Contact</li>
+					{/* <li><Link />Products</li> */}
 					<li><a href="categories.html">accessories</a></li>
 					<li><a href="categories.html">lingerie</a></li>
-					<li><a href="contact.html">contact</a></li>
+					{/* <li><a href="contact.html">contact</a></li> */}
 				</ul>
 			</nav>
 			<div className="header_content ml-auto">
@@ -26,7 +31,7 @@ const Header = () => {
 				</div>
 				<div className="shopping">
 			
-					<a href="#">
+					<Link to='./cart'>
 						<div className="cart">
 							<img src="images/shopping-bag.svg" alt="" />
 							<div className="cart_num_container">
@@ -35,7 +40,7 @@ const Header = () => {
 								</div>
 							</div>
 						</div>
-					</a>
+					</Link>
 		
 					<a href="#">
 						<div className="star">
